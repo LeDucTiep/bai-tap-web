@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang nhap dien dan</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div.form-dang-nhap {
+            border: solid 1px black;
+            width: 300px;
+            
+        }
+        div {
+            margin: auto;
+            padding: 5px;
+            align-items: center;
+        }
+        h2{
+            text-align: center;
+            margin: 10px;
+        }
+        input {
+            margin: 2px;
+        }
+        div.button > input {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="form-dang-nhap">
+        <h2>ĐĂNG NHẬP DIỄN ĐÀN</h2>
+        <form action="login.php" name="dang-nhap" method="post">
+            <label for="user-name">Tên đăng nhập: </label>
+            <input id="user-name" type="text" name="uname" required>
+            <br>
+            <label for="password" style="margin-right: 34px;">Mật khẩu: </label>
+            <input type="password" id="password" name="psw" required>
+            <br>
+            <div class="button">
+                <input type="submit" value="Đăng nhập"></input>
+                <input type="reset" value="Phục hồi"></input>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
